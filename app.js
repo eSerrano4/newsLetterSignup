@@ -68,8 +68,8 @@ app.get("/", function(req, res){
 })
 
 //check that app is running on port 3000
-app.listen(3000, function(){
-    console.log("App running on port 3000");
+app.listen(process.env.PORT || 3000, function(){
+    console.log("App running on port");
     });
     
 // be80027deee66a19a5ff669831ebaeb3-us7
